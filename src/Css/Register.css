@@ -1,4 +1,10 @@
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
 
 .register-container {
   max-width: 400px;
@@ -7,22 +13,21 @@
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Poppins', sans-serif;
 }
 
-.register-title {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
+/* Form */
 .register-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.register-input {
+.register-form h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+.register-form input {
   padding: 10px 12px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -30,12 +35,12 @@
   transition: border 0.3s ease;
 }
 
-.register-input:focus {
+.register-form input:focus {
   border-color: #007bff;
   outline: none;
 }
 
-.register-button {
+.register-form button {
   background-color: #007bff;
   color: white;
   padding: 10px;
@@ -46,13 +51,67 @@
   transition: background 0.3s ease;
 }
 
-.register-button:hover {
+.register-form button:hover {
   background-color: #0056b3;
 }
 
-.register-message {
+/* Message */
+.register-form p {
   text-align: center;
   color: #d9534f;
   font-weight: 500;
   margin-top: 10px;
+}
+
+/* Mobile (0px - 767px) */
+@media (max-width: 767px) {
+  .register-container {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .register-form h3 {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .register-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 35px;
+  }
+
+  .register-form h3 {
+    font-size: 24px;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .register-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px;
+  }
+
+  .register-form h3 {
+    font-size: 26px;
+  }
+
+  .register-form input,
+  .register-form button {
+    font-size: 18px;
+  }
 }

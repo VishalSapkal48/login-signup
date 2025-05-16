@@ -1,0 +1,39 @@
+.dashboard-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #f2f7ff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.dashboard-container h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0056b3;
+}
+
+.dashboard-container p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.dashboard-container button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-container button:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
+}

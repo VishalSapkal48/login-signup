@@ -42,7 +42,7 @@ body {
 }
 
 .frominput:focus {
-  border-color: #007bff;
+  border-color: hsl(359, 100%, 50%);
   outline: none;
 }
 
@@ -66,4 +66,73 @@ p {
   color: #d9534f;
   font-weight: 500;
   margin-top: 10px;
+}
+
+.register-redirect-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-redirect-button:hover {
+  background-color: #da0b2d;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+
+  .frominput, .loginsubmit, .register-redirect-button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .loginform h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .login-container {
+    max-width: 450px;
+    padding: 25px;
+  }
+
+  .frominput, .loginsubmit, .register-redirect-button {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .loginform h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .login-container {
+    max-width: 500px;
+  }
+
+  .loginform h3 {
+    font-size: 24px;
+  }
+
+  .frominput, .loginsubmit, .register-redirect-button {
+    font-size: 16px;
+  }
 }
