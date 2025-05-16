@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-<<<<<<< HEAD
-import '../Css/Login.css'; 
-=======
 import '../Css/Login.css';
-
->>>>>>> 84d6471 (Your commit message)
 function Login() {
   const [form, setForm] = useState({ email: '', password: '' });
   const [msg, setMsg] = useState('');
